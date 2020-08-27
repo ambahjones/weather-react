@@ -6,10 +6,10 @@ export default function Current() {
     <div className="Current">
       <div className="row" id="current-info">
         <div className="cityEmoji">
-          <div className="col currentCity" id="current-city">
+          <div className="col-4 currentCity" id="current-city">
             Philadelphia
           </div>
-          <div className="col currentEmoji">
+          <div className="col-4 currentEmoji">
             <img src="" alt="🌤" id="weather-icon" />
           </div>
         </div>
