@@ -23,14 +23,6 @@
   text-align: left;
   line-height: 30px;
 }
-.searchButton:hover {
-  background-color: #84a9ac;
-  transition: all 200ms ease-in-out;
-}
-.currentButton:hover {
-  background-color: #84a9ac;
-  transition: all 200ms ease-in-out;
-}
 .searchBar {
   width: 65%;
   text-align: center;
@@ -43,10 +35,18 @@
   border-radius: 10px;
   width: 15%;
 }
+.searchButton:hover {
+  background-color: #84a9ac;
+  transition: all 200ms ease-in-out;
+}
 .currentButton {
   text-align: center;
   border-radius: 10px;
   width: 15%;
+}
+.currentButton:hover {
+  background-color: #84a9ac;
+  transition: all 200ms ease-in-out;
 }
 .currentInfo {
   line-height: 60px;
@@ -55,18 +55,22 @@
 .currentCity {
   font-size: 36px;
 }
-.currentEmoji {
+#weather-icon {
   font-size: 72px;
 }
 #updated {
   line-height: 16px;
   font-size: 16px;
 }
-.currentDay {
+#current-day {
   line-height: 40px;
   font-size: 24px;
 }
-.currentTemp {
+#current-temp {
+  font-size: 68px;
+  font-weight: 400;
+}
+#degree {
   font-size: 68px;
   font-weight: 400;
 }
@@ -96,19 +100,23 @@
 .highLowMajor {
   font-size: 24px;
 }
+.forecast {
+  margin: 20px 0 20px 0;
+}
 ul {
   margin: 0;
   padding: 0;
 }
 li {
   list-style: none;
-  line-height: 20px;
+  line-height: 50px;
 }
-.emoji {
+.forecastTime {
   font-size: 60px;
+  font-weight: 800;
 }
-.forecast {
-  margin: 20px 0 20px 0;
+.forecastIcon {
+  font-size: 54px;
 }
 .codeLink {
   position: relative;

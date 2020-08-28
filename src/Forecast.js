@@ -6,37 +6,47 @@ export default function Forecast() {
       <div className="row">
         <div className="col">
           <ul>
-            <li>1pm</li>
-            <li>☀️</li>
-            <li>80°F</li>
+            <li className="forcastTime">1pm</li>
+            <li className="forecastIcon">
+              <img src="" alt="☀️" />
+            </li>
+            <li className="forecastTemp">80°F</li>
           </ul>
         </div>
         <div className="col">
           <ul>
-            <li>1pm</li>
-            <li>☀️</li>
-            <li>80°F</li>
+            <li className="forcastTime">1pm</li>
+            <li className="forecastIcon">
+              <img src="" alt="☀️" />
+            </li>
+            <li className="forecastTemp">80°F</li>
           </ul>
         </div>
         <div className="col">
           <ul>
-            <li>1pm</li>
-            <li>☀️</li>
-            <li>80°F</li>
+            <li className="forcastTime">1pm</li>
+            <li className="forecastIcon">
+              <img src="" alt="☀️" />
+            </li>
+            <li className="forecastTemp">80°F</li>
           </ul>
         </div>
         <div className="col">
           <ul>
-            <li>1pm</li>
-            <li>☀️</li>
-            <li>80°F</li>
+            <li className="forcastTime">1pm</li>
+            <li className="forecastIcon">
+              <img src="" alt="☀️" />
+            </li>
+            <li className="forecastTemp">80°F</li>
           </ul>
         </div>
         <div className="col">
           <ul>
-            <li>1pm</li>
-            <li>☀️</li>
-            <li>80°F</li>
+            <li className="forcastTime">1pm</li>
+            <li className="forecastIcon">
+              <img src="" alt="☀️" />
+            </li>
+            <li className="forecastTemp">80°F</li>
           </ul>
         </div>
       </div>

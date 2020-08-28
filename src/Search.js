@@ -26,7 +26,7 @@ export default function Search() {
 
   return (
     <div>
-      <form>
+      <form className="citySearch">
         <input
           type="text"
           placeholder="City to Search"

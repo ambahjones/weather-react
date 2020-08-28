@@ -4,12 +4,12 @@ import "./App.css";
 export default function Current() {
   return (
     <div className="Current">
-      <div className="row" id="current-info">
-        <div className="cityEmoji">
-          <div className="col-4 currentCity" id="current-city">
+      <div className="row">
+        <div className="currentInfo">
+          <div className="col currentCity" id="current-city">
             Philadelphia
           </div>
-          <div className="col-4 currentEmoji">
+          <div className="col">
             <img src="" alt="🌤" id="weather-icon" />
           </div>
         </div>
@@ -18,14 +18,14 @@ export default function Current() {
           <div className="col" id="updated">
             Last updated:
           </div>
-          <div className="col currentDay" id="current-day">
+          <div className="col" id="current-day">
             Saturday, 1:41
           </div>
-          <div className="col currentTemp">
-            <span className="temp" id="temperature">
+          <div className="col">
+            <span className="temp" id="current-temp">
               80
             </span>
-            °
+            <span id="degree">°</span>
             <span className="unit" id="unit-f">
               F
             </span>
