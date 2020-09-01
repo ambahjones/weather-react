@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-export default function Current() {
+export default function CurrentWeather() {
   return (
     <div className="Current">
       <div className="row">
@@ -19,7 +19,7 @@ export default function Current() {
             Last updated:
           </div>
           <div className="col" id="current-day">
-            Saturday, 1:41
+            Saturday 1:00
           </div>
           <div className="col">
             <span className="temp" id="current-temp">
