@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./App.css";
 import CurrentWeather from "./CurrentWeather";
 import axios from "axios";
-import FormatDate from "./FormatDate";
 
 export default function Search() {
   const [weatherInfo, setWeatherInfo] = useState({ ready: false });
@@ -18,6 +17,7 @@ export default function Search() {
       low: Math.round(response.data.main.temp_min),
       humidity: response.data.main.humidity,
       wind: Math.round(response.data.wind.speed),
+      icon: response.data.weather[0].icon,
     });
   }
 
@@ -46,65 +46,7 @@ export default function Search() {
           />
         </form>
 
-        <div className="Current">
-          <div className="row">
-            <div className="currentInfo">
-              <div className="col currentCity" id="current-city">
-                {weatherInfo.city}
-              </div>
-              <div className="col">
-                <img src="" alt="🌤" id="weather-icon" />
-              </div>
-            </div>
-
-            <div className="currentDayTemp">
-              <div className="col" id="updated">
-                Last updated:
-              </div>
-              <div className="col" id="current-day">
-                <FormatDate date={weatherInfo.date} />
-              </div>
-              <div className="col">
-                <span className="temp" id="current-temp">
-                  {weatherInfo.temperature}
-                </span>
-                <span id="degree">°</span>
-                <span className="unit" id="unit-f">
-                  F
-                </span>
-                <span className="unitSlash">|</span>
-                <span className="unit" id="unit-c">
-                  C
-                </span>
-              </div>
-            </div>
-
-            <div className="col weather">
-              <div className="col emojiDescription" id="emoji-description">
-                {weatherInfo.description}
-              </div>
-              <div className="col highLowMajor">
-                <strong>
-                  <span id="high-major">{weatherInfo.high}</span>°
-                </strong>
-                /<span id="low-major">{weatherInfo.low}</span>°
-              </div>
-              <div className="col humidity wind">
-                <ul>
-                  <li id="humidity">
-                    Humidity: <span id="percent">{weatherInfo.humidity}</span>%
-                  </li>
-                  <li id="wind">
-                    Wind: <span id="speed">{weatherInfo.wind}</span>
-                    <span id="speed-unit"> mph</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <CurrentWeather />
+        <CurrentWeather info={weatherInfo} />
       </div>
     );
   } else {

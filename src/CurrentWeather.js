@@ -1,13 +1,14 @@
 import React from "react";
 import "./App.css";
+import FormatDate from "./FormatDate";
 
-export default function CurrentWeather() {
+export default function CurrentWeather(props) {
   return (
     <div className="Current">
       <div className="row">
         <div className="currentInfo">
           <div className="col currentCity" id="current-city">
-            Philadelphia
+            {props.info.city}
           </div>
           <div className="col">
             <img src="" alt="🌤" id="weather-icon" />
@@ -19,11 +20,11 @@ export default function CurrentWeather() {
             Last updated:
           </div>
           <div className="col" id="current-day">
-            Saturday 1:00
+            <FormatDate date={props.info.date} />
           </div>
           <div className="col">
             <span className="temp" id="current-temp">
-              80
+              {props.info.temperature}
             </span>
             <span id="degree">°</span>
             <span className="unit" id="unit-f">
@@ -38,22 +39,22 @@ export default function CurrentWeather() {
 
         <div className="col weather">
           <div className="col emojiDescription" id="emoji-description">
-            Partly Cloudy
+            {props.info.description}
           </div>
           <div className="col highLowMajor">
             <strong>
-              <span id="high-major">85</span>°
+              <span id="high-major">{props.info.high}</span>°
             </strong>
-            /<span id="low-major">70</span>°
+            /<span id="low-major">{props.info.low}</span>°
           </div>
           <div className="col humidity wind">
             <ul>
               <li id="humidity">
-                Humidity: <span id="percent">0</span>%
+                Humidity: <span id="percent">{props.info.humidity}</span>%
               </li>
               <li id="wind">
-                Wind: <span id="speed">0</span>
-                <span id="speed-unit">mph</span>
+                Wind: <span id="speed">{props.info.wind}</span>
+                <span id="speed-unit"> mph</span>
               </li>
             </ul>
           </div>
