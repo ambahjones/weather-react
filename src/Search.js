@@ -11,6 +11,7 @@ export default function Search(props) {
     setWeatherInfo({
       ready: true,
       city: response.data.name,
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       temperature: Math.round(response.data.main.temp),
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
@@ -45,7 +46,7 @@ export default function Search(props) {
             placeholder="City to Search"
             className="searchBar"
             id="city-to-search"
-            autofocus="on"
+            autoFocus="on"
             onChange={changeCity}
           />
           <input

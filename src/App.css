@@ -19,6 +19,9 @@
 .current {
   width: 90%;
 }
+form {
+  padding-bottom: 30px;
+}
 .citySearch {
   text-align: left;
   line-height: 30px;
@@ -47,6 +50,9 @@
 .currentButton:hover {
   background-color: #84a9ac;
   transition: all 200ms ease-in-out;
+}
+.current {
+  width: 90%;
 }
 .currentInfo {
   line-height: 60px;
@@ -105,11 +111,9 @@
 }
 ul {
   margin: 0;
-  padding: 0;
 }
 li {
   list-style: none;
-  line-height: 50px;
 }
 .forecastTime {
   font-size: 60px;
