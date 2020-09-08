@@ -15,6 +15,8 @@ export default function CurrentWeather(props) {
         low={props.info.low}
         humidity={props.info.humidity}
         wind={props.info.wind}
+        units={props.units}
+        setUnits={props.setUnits}
       />
     </div>
   );

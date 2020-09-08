@@ -38,13 +38,18 @@ export default function ForecastPreview(props) {
   }
 
   function temperature() {
-    let temperature = Math.round(props.data.main.temp);
-    return `${temperature}°F`;
+    if (props.units === "imperial") {
+      let temperature = Math.round(props.data.main.temp);
+      return `${temperature}°F`;
+    } else {
+      let temperature = Math.round(((props.data.main.temp - 32) * 5) / 9);
+      return `${temperature}°C`;
+    }
   }
 
   return (
-    <div className="forecast">
-      <div className="row col">
+    <div className="row forecast">
+      <div className="col text-canter">
         <ul>
           <li className="forcastTime">{hours()}</li>
           <li className="forecastIcon">
