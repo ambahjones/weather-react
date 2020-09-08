@@ -106,14 +106,16 @@ form {
 .highLowMajor {
   font-size: 24px;
 }
-.forecast {
-  margin: 20px 0 20px 0;
-}
 ul {
   margin: 0;
 }
 li {
   list-style: none;
+  text-align: center;
+}
+.weatherForecast {
+  text-align: center;
+  margin: 0 auto;
 }
 .forecastTime {
   font-size: 60px;

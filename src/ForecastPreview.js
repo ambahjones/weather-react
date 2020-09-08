@@ -44,16 +44,14 @@ export default function ForecastPreview(props) {
 
   return (
     <div className="forecast">
-      <div className="row">
-        <div className="col">
-          <ul>
-            <li className="forcastTime">{hours()}</li>
-            <li className="forecastIcon">
-              <img src={iconUrl} alt="" />
-            </li>
-            <li className="forecastTemp">{temperature()}</li>
-          </ul>
-        </div>
+      <div className="row col">
+        <ul>
+          <li className="forcastTime">{hours()}</li>
+          <li className="forecastIcon">
+            <img src={iconUrl} alt="" />
+          </li>
+          <li className="forecastTemp">{temperature()}</li>
+        </ul>
       </div>
     </div>
   );
