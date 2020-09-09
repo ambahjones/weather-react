@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import FormatDate from "./FormatDate";
 
 export default function UnitConversion(props) {
-  const [unit, setUnit] = useState("imperial");
   let city = props.city;
   let icon = props.icon;
   let temperature = props.fahrenheit;
@@ -14,16 +13,14 @@ export default function UnitConversion(props) {
   let wind = props.wind;
 
   function showCelcius(event) {
-    event.preventDefault();
-    setUnit("celcius");
+    props.setUnits("celcius");
   }
 
   function showFahrenheit(event) {
-    event.preventDefault();
-    setUnit("imperial");
+    props.setUnits("imperial");
   }
 
-  if (unit === "imperial") {
+  if (props.units === "imperial") {
     return (
       <div className="row">
         <div className="col currentInfo">

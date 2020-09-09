@@ -65,7 +65,7 @@ export default function Search(props) {
           />
         </form>
 
-        <CurrentWeather info={weatherInfo} setUnits={setUnits} />
+        <CurrentWeather info={weatherInfo} units={units} setUnits={setUnits} />
         <Forecast city={weatherInfo.city} units={units} />
       </div>
     );
