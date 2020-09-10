@@ -31,7 +31,6 @@ export default function UnitConversion(props) {
             <img src={icon} alt="🌤" id="weather-icon" />
           </div>
         </div>
-
         <div className="col currentDayTemp">
           <div className="col" id="updated">
             Last updated:
@@ -53,7 +52,6 @@ export default function UnitConversion(props) {
             </span>
           </div>
         </div>
-
         <div className="col weather">
           <div className="col emojiDescription" id="emoji-description">
             {description}
@@ -89,7 +87,6 @@ export default function UnitConversion(props) {
             <img src={icon} alt="🌤" id="weather-icon" />
           </div>
         </div>
-
         <div className="col currentDayTemp">
           <div className="col" id="updated">
             Last updated:
@@ -109,7 +106,6 @@ export default function UnitConversion(props) {
             C
           </span>
         </div>
-
         <div className="col weather">
           <div className="col emojiDescription" id="emoji-description">
             {description}
