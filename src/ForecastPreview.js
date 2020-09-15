@@ -49,8 +49,8 @@ export default function ForecastPreview(props) {
 
   return (
     <div className="row forecast">
-      <div className="col text-canter">
-        <ul>
+      <div className="col text-center">
+        <ul className="col">
           <li className="forcastTime">{hours()}</li>
           <li className="forecastIcon">
             <img src={iconUrl} alt="" />
