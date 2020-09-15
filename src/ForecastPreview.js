@@ -50,7 +50,7 @@ export default function ForecastPreview(props) {
   return (
     <div className="row forecast">
       <div className="col text-center">
-        <ul className="col">
+        <ul className="col forecastItem">
           <li className="forcastTime">{hours()}</li>
           <li className="forecastIcon">
             <img src={iconUrl} alt="" />
